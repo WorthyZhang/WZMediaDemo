@@ -18,8 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.demoCount = 2;
+    self.demoCount = 3;
 }
 
 - (NSString *)classNameOfViewControllerAtIndex:(NSInteger)index {
@@ -40,7 +39,6 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *className = [self classNameOfViewControllerAtIndex:indexPath.row];
-    
     Class class = NSClassFromString(className);
     UIViewController *vc = (UIViewController *)[[class alloc] init];
     [self.navigationController pushViewController:vc animated:YES];

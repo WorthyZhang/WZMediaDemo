@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WZDemo0ViewController">
+            <connections>
+                <outlet property="overlayView" destination="DYa-Jj-ILY" id="BbM-az-Eo3"/>
+                <outlet property="previewView" destination="qru-ZK-kH4" id="kkD-DS-ELo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qru-ZK-kH4">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYa-Jj-ILY">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEL-vt-n0i">
+                            <rect key="frame" x="20" y="0.0" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="akv-tp-3ne"/>
+                                <constraint firstAttribute="width" constant="64" id="etZ-kV-cnT"/>
+                            </constraints>
+                            <state key="normal" title="闪光灯"/>
+                            <connections>
+                                <action selector="flashButtonClicked:" destination="-1" eventType="touchUpInside" id="aYu-iZ-GLm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ak1-Vo-jNa">
+                            <rect key="frame" x="516" y="0.0" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="LoV-2l-TxW"/>
+                                <constraint firstAttribute="width" constant="64" id="r0T-oN-nM7"/>
+                            </constraints>
+                            <state key="normal" title="摄像头"/>
+                            <connections>
+                                <action selector="cameraPositionButtonClicked:" destination="-1" eventType="touchUpInside" id="D0x-PU-hny"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJh-Zu-CZW">
+                            <rect key="frame" x="268" y="536" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="9sD-ml-mX0"/>
+                                <constraint firstAttribute="height" constant="64" id="DVd-1D-cGS"/>
+                            </constraints>
+                            <state key="normal" title="拍摄"/>
+                            <connections>
+                                <action selector="captureButtonClicked:" destination="-1" eventType="touchUpInside" id="3Tb-1v-dJN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="SEL-vt-n0i" firstAttribute="top" secondItem="DYa-Jj-ILY" secondAttribute="top" id="E5f-wB-Fdq"/>
+                        <constraint firstItem="Ak1-Vo-jNa" firstAttribute="top" secondItem="DYa-Jj-ILY" secondAttribute="top" id="UA8-Z2-Bcf"/>
+                        <constraint firstAttribute="bottom" secondItem="XJh-Zu-CZW" secondAttribute="bottom" id="bsC-TM-Nb7"/>
+                        <constraint firstItem="XJh-Zu-CZW" firstAttribute="centerX" secondItem="DYa-Jj-ILY" secondAttribute="centerX" id="dFE-yz-0In"/>
+                        <constraint firstItem="SEL-vt-n0i" firstAttribute="leading" secondItem="DYa-Jj-ILY" secondAttribute="leading" constant="20" id="gWc-bb-BZJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Ak1-Vo-jNa" secondAttribute="trailing" constant="20" id="qal-aq-L0C"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="GCc-6z-3GR" appends="YES" id="ylz-YK-cL9"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="DYa-Jj-ILY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4oI-9M-JOg"/>
+                <constraint firstAttribute="bottom" secondItem="qru-ZK-kH4" secondAttribute="bottom" id="Cf4-BU-5Us"/>
+                <constraint firstItem="qru-ZK-kH4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IDJ-GR-geN"/>
+                <constraint firstItem="qru-ZK-kH4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MfX-zv-VYC"/>
+                <constraint firstAttribute="trailing" secondItem="DYa-Jj-ILY" secondAttribute="trailing" id="QGe-l1-FnV"/>
+                <constraint firstItem="DYa-Jj-ILY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QX2-wK-c0J"/>
+                <constraint firstAttribute="trailing" secondItem="qru-ZK-kH4" secondAttribute="trailing" id="R9c-D6-lZd"/>
+                <constraint firstAttribute="bottom" secondItem="DYa-Jj-ILY" secondAttribute="bottom" id="lW7-1a-wTn"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="GCc-6z-3GR" appends="YES" id="1Gz-sZ-blA"/>
+            </connections>
+        </view>
+        <pinchGestureRecognizer id="GCc-6z-3GR">
+            <connections>
+                <action selector="pinchGestureRecognizer:" destination="-1" id="4KO-uv-QgX"/>
+            </connections>
+        </pinchGestureRecognizer>
+    </objects>
+</document>

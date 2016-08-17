@@ -15,6 +15,11 @@
 		5AA090061D644ED2005BD597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA090041D644ED2005BD597 /* LaunchScreen.storyboard */; };
 		5AA090111D644ED2005BD597 /* WZMediaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA090101D644ED2005BD597 /* WZMediaDemoTests.m */; };
 		5AA0901C1D644ED2005BD597 /* WZMediaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0901B1D644ED2005BD597 /* WZMediaDemoUITests.m */; };
+		5AA0902B1D64504C005BD597 /* WZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0902A1D64504C005BD597 /* WZTableViewCell.m */; };
+		5AA090321D645410005BD597 /* WZDemo0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA090301D645410005BD597 /* WZDemo0ViewController.m */; };
+		5AA090331D645410005BD597 /* WZDemo0ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA090311D645410005BD597 /* WZDemo0ViewController.xib */; };
+		5AA090371D645CAC005BD597 /* WZDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA090351D645CAC005BD597 /* WZDemo1ViewController.m */; };
+		5AA090381D645CAC005BD597 /* WZDemo1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA090361D645CAC005BD597 /* WZDemo1ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		5AA090171D644ED2005BD597 /* WZMediaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZMediaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA0901B1D644ED2005BD597 /* WZMediaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZMediaDemoUITests.m; sourceTree = "<group>"; };
 		5AA0901D1D644ED2005BD597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA090291D64504C005BD597 /* WZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZTableViewCell.h; sourceTree = "<group>"; };
+		5AA0902A1D64504C005BD597 /* WZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTableViewCell.m; sourceTree = "<group>"; };
+		5AA0902F1D645410005BD597 /* WZDemo0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZDemo0ViewController.h; sourceTree = "<group>"; };
+		5AA090301D645410005BD597 /* WZDemo0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZDemo0ViewController.m; sourceTree = "<group>"; };
+		5AA090311D645410005BD597 /* WZDemo0ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WZDemo0ViewController.xib; sourceTree = "<group>"; };
+		5AA090341D645CAC005BD597 /* WZDemo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZDemo1ViewController.h; sourceTree = "<group>"; };
+		5AA090351D645CAC005BD597 /* WZDemo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZDemo1ViewController.m; sourceTree = "<group>"; };
+		5AA090361D645CAC005BD597 /* WZDemo1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WZDemo1ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +114,15 @@
 		5AA08FF51D644ED2005BD597 /* WZMediaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5AA0902C1D6452E5005BD597 /* Demo0 */,
+				5AA0902D1D6452E5005BD597 /* Demo1 */,
+				5AA0902E1D6452E5005BD597 /* Demo2 */,
 				5AA08FF91D644ED2005BD597 /* AppDelegate.h */,
 				5AA08FFA1D644ED2005BD597 /* AppDelegate.m */,
 				5AA08FFC1D644ED2005BD597 /* ViewController.h */,
 				5AA08FFD1D644ED2005BD597 /* ViewController.m */,
+				5AA090291D64504C005BD597 /* WZTableViewCell.h */,
+				5AA0902A1D64504C005BD597 /* WZTableViewCell.m */,
 				5AA08FFF1D644ED2005BD597 /* Main.storyboard */,
 				5AA090021D644ED2005BD597 /* Assets.xcassets */,
 				5AA090041D644ED2005BD597 /* LaunchScreen.storyboard */,
@@ -138,6 +156,33 @@
 				5AA0901D1D644ED2005BD597 /* Info.plist */,
 			);
 			path = WZMediaDemoUITests;
+			sourceTree = "<group>";
+		};
+		5AA0902C1D6452E5005BD597 /* Demo0 */ = {
+			isa = PBXGroup;
+			children = (
+				5AA0902F1D645410005BD597 /* WZDemo0ViewController.h */,
+				5AA090301D645410005BD597 /* WZDemo0ViewController.m */,
+				5AA090311D645410005BD597 /* WZDemo0ViewController.xib */,
+			);
+			path = Demo0;
+			sourceTree = "<group>";
+		};
+		5AA0902D1D6452E5005BD597 /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				5AA090341D645CAC005BD597 /* WZDemo1ViewController.h */,
+				5AA090351D645CAC005BD597 /* WZDemo1ViewController.m */,
+				5AA090361D645CAC005BD597 /* WZDemo1ViewController.xib */,
+			);
+			path = Demo1;
+			sourceTree = "<group>";
+		};
+		5AA0902E1D6452E5005BD597 /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Demo2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA090061D644ED2005BD597 /* LaunchScreen.storyboard in Resources */,
+				5AA090381D645CAC005BD597 /* WZDemo1ViewController.xib in Resources */,
 				5AA090031D644ED2005BD597 /* Assets.xcassets in Resources */,
 				5AA090011D644ED2005BD597 /* Main.storyboard in Resources */,
+				5AA090331D645410005BD597 /* WZDemo0ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA090321D645410005BD597 /* WZDemo0ViewController.m in Sources */,
+				5AA0902B1D64504C005BD597 /* WZTableViewCell.m in Sources */,
 				5AA08FFE1D644ED2005BD597 /* ViewController.m in Sources */,
 				5AA08FFB1D644ED2005BD597 /* AppDelegate.m in Sources */,
+				5AA090371D645CAC005BD597 /* WZDemo1ViewController.m in Sources */,
 				5AA08FF81D644ED2005BD597 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

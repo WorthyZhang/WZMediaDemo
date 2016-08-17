@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WZTableViewCell.h
 //  WZMediaDemo
 //
 //  Created by Worthy on 16/8/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@interface WZTableViewCell : UITableViewCell
 
 @end
-
